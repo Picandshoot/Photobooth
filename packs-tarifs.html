@@ -4,7 +4,7 @@
   <title>Packs et Tarifs</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
+ <style>
     /* Styles CSS pour la mise en page */
     body {
       font-family: Arial, sans-serif;
@@ -52,10 +52,43 @@
       line-height: 1.5;
     }
 
-    /* Styles CSS pour les liens */
-    .link {
+    .section img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styles CSS pour la section de contact */
+    .contact-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .contact-section .contact-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-section .contact-info i {
+      margin-right: 10px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .contact-section .contact-info a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Styles CSS pour les boutons */
+    .btn {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 12px 24px;
       background-color: #007bff;
       color: #fff;
       font-size: 16px;
@@ -64,7 +97,7 @@
       transition: background-color 0.3s ease;
     }
 
-    .link:hover {
+    .btn:hover {
       background-color: #0056b3;
     }
 
@@ -107,7 +140,7 @@
       color: var(--accent-color);
     }
 
-    .link {
+    .btn {
       background-color: var(--primary-color);
       color: #fff;
       font-size: 18px;
@@ -116,8 +149,40 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .link:hover {
+    .btn:hover {
       background-color: var(--accent-color);
+    }
+
+    /* Styles CSS pour la navigation sur téléphone */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      .container {
+        padding: 0 10px;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+      .section h2 {
+        font-size: 24px;
+      }
+
+      .section p {
+        font-size: 14px;
+      }
+
+      .section img {
+        margin-top: 10px;
+      }
+
+      .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
