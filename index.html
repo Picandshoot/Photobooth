@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Ma Vitrine de Location de Photobooth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
@@ -151,6 +152,38 @@
 
     .btn:hover {
       background-color: var(--accent-color);
+    }
+
+    /* Styles CSS pour la navigation sur téléphone */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      .container {
+        padding: 0 10px;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+      .section h2 {
+        font-size: 24px;
+      }
+
+      .section p {
+        font-size: 14px;
+      }
+
+      .section img {
+        margin-top: 10px;
+      }
+
+      .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
