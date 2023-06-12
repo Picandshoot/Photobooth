@@ -5,6 +5,7 @@
 
   <title>Ma Vitrine de Location de Photobooth</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
@@ -55,6 +56,55 @@
       line-height: 1.5;
     }
 
+    .section img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styles CSS pour la section de contact */
+    .contact-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .contact-section .contact-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-section .contact-info i {
+      margin-right: 10px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .contact-section .contact-info a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Styles CSS pour les boutons */
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
     /* Styles CSS pour la modernité */
     :root {
       --primary-color: #007bff;
@@ -92,6 +142,51 @@
 
     a:hover {
       color: var(--accent-color);
+    }
+
+    .btn {
+      background-color: var(--primary-color);
+      color: #fff;
+      font-size: 18px;
+      padding: 14px 28px;
+      border: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn:hover {
+      background-color: var(--accent-color);
+    }
+
+    /* Styles CSS pour la navigation sur téléphone */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      .container {
+        padding: 0 10px;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+      .section h2 {
+        font-size: 24px;
+      }
+
+      .section p {
+        font-size: 14px;
+      }
+
+      .section img {
+        margin-top: 10px;
+      }
+
+      .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
     }
   </style>
  </head>
