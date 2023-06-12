@@ -1,13 +1,13 @@
-
-<style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
     /* Styles CSS pour la mise en page */
     body {
-     font-family: Arial, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f8f8f8;
       color: #333;
-   
     }
 
     header {
